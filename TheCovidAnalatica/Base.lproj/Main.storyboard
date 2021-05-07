@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheCovidAnalatica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="iye-Xr-0aS">
+                                <rect key="frame" x="138" y="57" width="138" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="XN5-Zt-xGN"/>
+                                    <constraint firstAttribute="width" constant="138" id="yV4-Y7-ny9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi6-I2-LmP">
+                                <rect key="frame" x="208" y="256" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Covid19 infection data in details:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmo-gS-49D">
+                                <rect key="frame" x="20" y="611" width="374" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="cIg-Fo-hi4"/>
+                                    <constraint firstAttribute="height" constant="137" id="mxb-Jg-O7Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pp-fw-OrW">
+                                <rect key="frame" x="243" y="781" width="130" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="pBz-8x-6bf"/>
+                                    <constraint firstAttribute="height" constant="56" id="yy1-rm-701"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Ehm-I4-LBG" kind="show" id="OTM-dy-996"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGi-TE-1Ia">
+                                <rect key="frame" x="46" y="781" width="130" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="3oC-DK-ckK"/>
+                                    <constraint firstAttribute="width" constant="130" id="UkF-sU-8RS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="9ed-BC-NNj" kind="show" id="eDz-3u-gug"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Death" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyC-db-jBP">
+                                <rect key="frame" x="298" y="162" width="96" height="67"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.35294117650000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="PgE-lN-sby"/>
+                                    <constraint firstAttribute="width" constant="96" id="aFm-xW-wuz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recovered" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq4-lx-eVu">
+                                <rect key="frame" x="158" y="161" width="118" height="68"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="0ot-Ia-lGT"/>
+                                    <constraint firstAttribute="height" constant="68" id="qTI-kX-I7a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="way-im-z2j">
+                                <rect key="frame" x="20" y="162" width="118" height="67"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Io1-az-SVs"/>
+                                    <constraint firstAttribute="width" constant="118" id="Msa-4R-NzA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country VS World Case" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkf-s3-ifc">
+                                <rect key="frame" x="20" y="246" width="180" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="C0M-Nc-TUh"/>
+                                    <constraint firstAttribute="height" constant="45" id="uuV-x8-9Bj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country vs World recovery" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMT-Hk-K8h">
+                                <rect key="frame" x="243" y="246" width="151" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Nsh-GD-2DT"/>
+                                    <constraint firstAttribute="width" constant="151" id="ZOI-dQ-O9F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* The above graph shows world covid19 Data." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeZ-CV-WP3">
+                                <rect key="frame" x="20" y="582" width="353" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="353" id="RtC-Qe-XLu"/>
+                                    <constraint firstAttribute="height" constant="32" id="y7e-Bs-AnO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yMT-Hk-K8h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-179.5" id="0AR-u5-0u6"/>
+                            <constraint firstItem="UeZ-CV-WP3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-10.5" id="5lP-C0-UNX"/>
+                            <constraint firstItem="way-im-z2j" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-252.5" id="61X-ks-qia"/>
+                            <constraint firstItem="lyC-db-jBP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="139" id="6JP-H5-dJI"/>
+                            <constraint firstItem="5Pp-fw-OrW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="101" id="8CP-o9-LZ0"/>
+                            <constraint firstItem="lyC-db-jBP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-252.5" id="8Y8-Wd-IU5"/>
+                            <constraint firstItem="wGi-TE-1Ia" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-96" id="BQg-qZ-ewu"/>
+                            <constraint firstItem="iye-Xr-0aS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ENe-Mn-G4C"/>
+                            <constraint firstItem="iye-Xr-0aS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-344.5" id="Fbs-7n-Xc8"/>
+                            <constraint firstItem="way-im-z2j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-128" id="G2b-Iz-w7o"/>
+                            <constraint firstItem="eq4-lx-eVu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-253" id="Gap-hF-DR0"/>
+                            <constraint firstItem="mkf-s3-ifc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-97" id="H7s-Ah-Fi1"/>
+                            <constraint firstItem="UeZ-CV-WP3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="150" id="MTW-kc-U6I"/>
+                            <constraint firstItem="Vmo-gS-49D" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="231.5" id="RDy-jz-76e"/>
+                            <constraint firstItem="UeZ-CV-WP3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-10.5" id="eIa-at-W2Y"/>
+                            <constraint firstItem="yMT-Hk-K8h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="111.5" id="euy-ud-N7h"/>
+                            <constraint firstItem="eq4-lx-eVu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="10" id="f6Y-0v-Ppk"/>
+                            <constraint firstItem="5Pp-fw-OrW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="361" id="l9W-73-Rok"/>
+                            <constraint firstItem="mkf-s3-ifc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-179.5" id="m76-T0-nDC"/>
+                            <constraint firstItem="Vmo-gS-49D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nsn-NP-pbo"/>
+                            <constraint firstItem="wGi-TE-1Ia" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="361" id="rhB-Z7-0gr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="affectedPercentageView" destination="bi6-I2-LmP" id="nh8-dq-jtV"/>
+                        <outlet property="casePercentageLabe" destination="mkf-s3-ifc" id="ABm-1v-sdX"/>
+                        <outlet property="deathLabel" destination="lyC-db-jBP" id="g4v-gA-abj"/>
+                        <outlet property="descriptionView" destination="Vmo-gS-49D" id="L3d-pk-Nlr"/>
+                        <outlet property="howToAvoidInfection" destination="5Pp-fw-OrW" id="I0I-3u-NnS"/>
+                        <outlet property="recoveredLabel" destination="eq4-lx-eVu" id="lMQ-do-ODV"/>
+                        <outlet property="recoveredPercentageLabel" destination="yMT-Hk-K8h" id="6ZH-qV-NGB"/>
+                        <outlet property="selfAssesment" destination="wGi-TE-1Ia" id="vAQ-G3-sAl"/>
+                        <outlet property="totalLabel" destination="way-im-z2j" id="UFH-3P-PTX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="49.553571428571423"/>
+        </scene>
+        <!--Assesment Controller-->
+        <scene sceneID="yce-dm-Oec">
+            <objects>
+                <viewController id="9ed-BC-NNj" customClass="AssesmentController" customModule="TheCovidAnalatica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2HX-kv-kVB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="c6t-de-vaJ">
+                                <rect key="frame" x="147" y="20" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhJ-mX-R77">
+                                <rect key="frame" x="20" y="232" width="374" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zyv-Qd-1Rm">
+                                <rect key="frame" x="184" y="546" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" systemColor="systemGray2Color"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfm-RF-2YG">
+                                <rect key="frame" x="132" y="696" width="150" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTest:" destination="9ed-BC-NNj" eventType="touchUpInside" id="3ko-3W-w6C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yd1-pL-za5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ioq-uL-qXn"/>
+                    <connections>
+                        <outlet property="buttonLabel" destination="rfm-RF-2YG" id="cYF-R4-aac"/>
+                        <outlet property="queryLabel" destination="qhJ-mX-R77" id="OF6-dI-6sS"/>
+                        <outlet property="toggleButton" destination="Zyv-Qd-1Rm" id="RYk-3l-i2Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFU-Tu-Lnd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="50"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7Xi-AA-jDQ">
+            <objects>
+                <viewController id="Ehm-I4-LBG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hfy-6f-HmJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.Wear a mask that covers your nose and mouth to help protect yourself and others." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xms-AK-tEZ">
+                                <rect key="frame" x="33" y="264" width="348" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="CB4-K3-pVY"/>
+                                    <constraint firstAttribute="width" constant="348" id="Mzy-8X-TPS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="LAj-Sn-1vc">
+                                <rect key="frame" x="87" y="62" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.Stay 6 feet apart from others who don't live with you." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdA-Jq-979">
+                                <rect key="frame" x="33" y="328" width="348" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Vgy-GD-8b9"/>
+                                    <constraint firstAttribute="width" constant="348" id="q2o-zw-ekL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.Get a COVID-19 vaccine when it is available to you." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQI-jj-DTg">
+                                <rect key="frame" x="33" y="392" width="348" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="348" id="g0j-tG-rFn"/>
+                                    <constraint firstAttribute="height" constant="56" id="oWP-k8-xNH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.Avoid crowds and poorly ventilated indoor spaces." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLk-fs-1lZ">
+                                <rect key="frame" x="33" y="456" width="348" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="348" id="wGA-Hj-2NT"/>
+                                    <constraint firstAttribute="height" constant="56" id="wVk-0r-EW7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pllease follow below guidelines to stay safe!" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPH-UH-oar">
+                                <rect key="frame" x="36" y="195" width="348" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="348" id="V4H-wN-C3s"/>
+                                    <constraint firstAttribute="height" constant="56" id="cNr-vw-3eU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.Wash your hands often with soap and water." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqk-uw-Cu8">
+                                <rect key="frame" x="33" y="520" width="348" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="71K-af-guN"/>
+                                    <constraint firstAttribute="width" constant="348" id="uiB-Uv-gEP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source - https://www.cdc.gov/coronavirus/2019-ncov/" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkQ-Ij-wJh">
+                                <rect key="frame" x="141" y="584" width="243" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="5ZX-SN-7oF"/>
+                                    <constraint firstAttribute="width" constant="243" id="OsF-Ur-Nib"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bY5-gF-b4b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XQI-jj-DTg" firstAttribute="centerY" secondItem="Hfy-6f-HmJ" secondAttribute="centerY" constant="-1" id="0ZU-qa-DL5"/>
+                            <constraint firstItem="nPH-UH-oar" firstAttribute="centerX" secondItem="Hfy-6f-HmJ" secondAttribute="centerX" constant="3" id="3wA-ZV-fow"/>
+                            <constraint firstItem="KLk-fs-1lZ" firstAttribute="centerX" secondItem="Hfy-6f-HmJ" secondAttribute="centerX" id="7sp-2y-IBV"/>
+                            <constraint firstItem="UdA-Jq-979" firstAttribute="centerY" secondItem="Hfy-6f-HmJ" secondAttribute="centerY" constant="-65" id="8Pz-do-gdG"/>
+                            <constraint firstItem="CkQ-Ij-wJh" firstAttribute="centerX" secondItem="Hfy-6f-HmJ" secondAttribute="centerX" constant="55.5" id="HYs-aN-wHw"/>
+                            <constraint firstItem="KLk-fs-1lZ" firstAttribute="centerY" secondItem="Hfy-6f-HmJ" secondAttribute="centerY" constant="63" id="JK9-9K-b9g"/>
+                            <constraint firstItem="nPH-UH-oar" firstAttribute="centerY" secondItem="Hfy-6f-HmJ" secondAttribute="centerY" constant="-198" id="JXd-FT-er5"/>
+                            <constraint firstItem="Nqk-uw-Cu8" firstAttribute="centerY" secondItem="Hfy-6f-HmJ" secondAttribute="centerY" constant="127" id="MeC-Vt-g1c"/>
+                            <constraint firstItem="CkQ-Ij-wJh" firstAttribute="centerY" secondItem="Hfy-6f-HmJ" secondAttribute="centerY" constant="191" id="Paf-et-zOD"/>
+                            <constraint firstItem="UdA-Jq-979" firstAttribute="centerX" secondItem="Hfy-6f-HmJ" secondAttribute="centerX" id="Wkh-o4-Cwc"/>
+                            <constraint firstItem="XQI-jj-DTg" firstAttribute="centerX" secondItem="Hfy-6f-HmJ" secondAttribute="centerX" id="hO4-uX-DGD"/>
+                            <constraint firstItem="Xms-AK-tEZ" firstAttribute="centerY" secondItem="Hfy-6f-HmJ" secondAttribute="centerY" constant="-129" id="jjr-G7-zQS"/>
+                            <constraint firstItem="Nqk-uw-Cu8" firstAttribute="centerX" secondItem="Hfy-6f-HmJ" secondAttribute="centerX" id="sBZ-gw-XAq"/>
+                            <constraint firstItem="Xms-AK-tEZ" firstAttribute="centerX" secondItem="Hfy-6f-HmJ" secondAttribute="centerX" id="zPn-DU-ibQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kWl-cM-b3g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7H-rn-gbG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="870.53571428571422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="60" height="60"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
